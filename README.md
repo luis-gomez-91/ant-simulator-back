@@ -23,7 +23,7 @@ Backend robusto desarrollado con **FastAPI** para gestionar el banco de pregunta
 
 ## 📂 Estructura del Proyecto
 
-\`\`\`text
+```text
 ant-simulator-back/
 ├── alembic/            # Migraciones de base de datos
 ├── routers/            # Endpoints divididos por recursos
@@ -36,49 +36,49 @@ ant-simulator-back/
 ├── schemas.py          # Esquemas de validación (Pydantic)
 ├── requirements.txt    # Dependencias del proyecto
 └── Procfile            # Configuración para despliegue en Railway
-\`\`\`
+```
 
 ---
 
 ## 🛠️ Instalación y Configuración
 
 ### 1. Clonar el repositorio
-\`\`\`bash
+```bash
 git clone https://github.com/luis-gomez-91/ant-simulator-back
 cd ant-simulator-back
-\`\`\`
+```
 
 ### 2. Entorno Virtual
-\`\`\`bash
+```bash
 python -m venv venv
 # Linux/Mac
 source venv/bin/activate  
 # Windows
 venv\Scripts\activate
-\`\`\`
+```
 
 ### 3. Instalar Dependencias
-\`\`\`bash
+```bash
 pip install -r requirements.txt
-\`\`\`
+```
 
 ### 4. Variables de Entorno
 Crea un archivo \`.env\` en la raíz del proyecto con la siguiente estructura:
-\`\`\`env
+```env
 DATABASE_URL=postgresql://usuario:password@localhost/nombre_db
 CLOUDINARY_CLOUD_NAME='tu_cloud_name'
 CLOUDINARY_API_KEY='tu_api_key'
 CLOUDINARY_API_SECRET='tu_api_secret'
-\`\`\`
+```
 
 ---
 
 ## 🚀 Ejecución
 
 Para iniciar el servidor de desarrollo:
-\`\`\`bash
+```bash
 uvicorn main:app --reload
-\`\`\`
+```
 La API estará disponible en \`http://localhost:8000\`.
 
 * **Documentación Interactiva (Swagger):** [http://localhost:8000/docs](http://localhost:8000/docs)
